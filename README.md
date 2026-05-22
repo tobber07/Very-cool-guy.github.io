@@ -17,3 +17,5 @@ oh yeah and FIX BUGS PLZPLZPLZ
 resources like pictures and gifs in the `resources/` folder! (i can move them myself but it would be nice)
 
 please do not add random unverified zip files or exe files. see pr #43, #40
+
+isolate any css and javascript. There should be no inline styles or scripts unless minimal. this doesn't make the code look overwhelming and makes it easier to contribute.
