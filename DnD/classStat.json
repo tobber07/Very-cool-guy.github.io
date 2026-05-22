@@ -1,0 +1,165 @@
+{
+    "warrior": {
+        "name":"Warrior",
+        "hpBase":10,
+        "hpGrow":6,
+        "skill_amount":2,
+        "skills":["acrobatics","athletics","perception","survival","intimidation","history","insight","animal_handling"],
+            "levels": {
+                "1": {
+                    "features": [
+                        {
+                            "type": "active",
+                            "name":"Second wind",
+                            "description": "Restores health",
+                            "usage":"Bonus action",
+                            "amount":2,
+                            "recovery":["Short rest","Long rest"]
+                        },
+                        { 
+                            "type": "choice",
+                            "name":"Battle style", 
+                            "options":{
+                                "duelist":{"name":"Duelist"},
+                                "protection":{"name":"Protection"},
+                                "armour":{"name":"Armour"},
+                                "big_weapon_combat":{"name":"Big weapon combat"},
+                                "two_weapon_combat":{"name":"Two weapon combat"},
+                                "archery":{"name":"Archery"}}
+                        }
+                        ]
+                    },
+                "2": {
+                    "features": [
+                        {
+                            "type":"active",
+                            "name":"Surge of actions",
+                            "description":"Extra attac once",
+                            "usage":"Bonus action",
+                            "amount":1,
+                            "recovery":["Long rest"]
+                        }
+                    ]
+                },
+                "3": {
+                    "features": [
+                        {
+                            "type":"choice",
+                            "name":"Warrior archetype",
+                            "options":{
+                                "champion":{"name":"Champion"},
+                                "mystic_knight":{"name":"Mystic knight"},
+                                "samurai":{"name":"Samurai"}
+                            }
+                        }
+                    ]
+                }
+                
+        }},
+    "mage": {
+        "name":"Mage",
+        "hpBase":6,
+        "hpGrow":4,
+        "skill_amount":2,
+        "skills":["history","arcana","medicine","insight","investigation","religion"],
+        "spells_slots": {
+            "1": { "cantrips":3, "level1":2},
+            "2": { "cantrips":3, "level1":3},
+            "3": { "cantrips":3, "level1":4, "level2":2},
+            "4": { "cantrips":3, "level1":4, "level2":3},
+            "5": { "cantrips":3, "level1":4, "level2":3, "level3":2},
+            "6": { "cantrips":3, "level1":4, "level2":3, "level3":3},
+            "7": { "cantrips":3, "level1":4, "level2":3, "level3":3, "level4":1},
+            "8": { "cantrips":3, "level1":4, "level2":3, "level3":3, "level4":2},
+            "9": { "cantrips":3, "level1":4, "level2":3, "level3":3, "level4":3, "level5":1},
+            "10": { "cantrips":3, "level1":4, "level2":3, "level3":3, "level4":3, "level5":2}
+        },
+        "levels":
+            {
+                "1": {
+                    "features": [
+                        {
+                            "type":"passive",
+                            "name":"Magic restoration",
+                            "description":"Placeholder"
+                        }
+                    ]
+                },
+                "2":{
+                    "features":[
+                        {
+                            "type":"choice",
+                            "name":"Magic school",
+                            "options":{
+                                "evocationSchool":{"name":"Evocation school"},
+                                "conjurationSchool":{"name":"Conjuration school"},
+                                "illusionSchool":{"name":"Illusion school"},
+                                "abjurationSchool":{"name":"Abjuration school"}
+                            }
+                        }
+                    ]
+                }
+            }
+    },
+    "rogue": {
+        "name":"Rogue",
+        "hpBase":8,
+        "hpGrow":5,
+        "skill_amount":4,
+        "skills":["acrobatics","athletics","perception","performance","intimidation","sleight_of_hands","deception","insight","investigation","stealth","persuasion"],
+            "levels":
+                {
+                    "1": {
+                        "features":[                
+                    {
+                        "type":"passive",
+                        "name":"Smartass",
+                        "description":"Placeholder"
+                    },
+                    {
+                        "type":"active",
+                        "name":"Stealth attack",
+                        "description":"Extra damage when attack with advantage",
+                        "usage":"During turn",
+                        "amount":1,
+                        "recovery":"Every turn"
+                    },
+                    {
+                        "type":"passive",
+                        "name":"Street talk",
+                        "description":"Bum language and hobo signs"
+                    }
+                ]
+            },
+                    "2": {
+                        "features": [
+                    {
+                        "type":"passive",
+                        "name":"Smartass action",
+                        "description":"Dash, retreat and ambush are bonus actions"
+                    }
+                ]
+            },
+                    "3": {
+                        "features":[
+                    {
+                        "type":"choice",
+                        "name":"Rogue archetype",
+                        "options":{
+                            "thief":{"name":"Thief"},
+                            "assassin":{"name":"Assasin"},
+                            "arcane_trickster":{"name":"Arcane trickster"}
+
+                        }
+                    }
+                ]
+            }
+    }
+    },
+    "bard": {
+        "name":"Bard",
+        "hpBase":8,
+        "hpGrow":5,
+        "skill_amount":3,
+        "skills":["athletics","acrobatics","sleight_of_hands","stealth","arcana","history","investigation","nature","religion","animal_handling","insight","medicine","perception","survival","deception","intimidation","performance","persuasion"]}
+}

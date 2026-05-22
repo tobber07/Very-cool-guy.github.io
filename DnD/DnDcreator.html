@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <a href="../index.html">Home</a>
+	    <a href="../randomassgifs.html">Random Gifs</a>
+        <p>page is not fully complete as there are not all classes and races and level abilities (you can add them tho, check json files) </p>
+        <div>
+            <div>
+                <label>Name</label> <input type="text" id="name">
+            </div>
+            <div id="raceWrapper">
+                <select id="raceSelector">
+                    <option>--Choose race--</option>
+                </select>
+            </div>
+            <div>Points left: <span id="pointsLeft"></span></div>
+            <div id="statWrapper"></div>
+            <p>
+                <table><legend>Total</legend>
+                    <tr>
+                        <td>Stat Name</td><td>STR</td><td>AGI</td><td>CON</td><td>INT</td><td>WIS</td><td>CHR</td>
+                    </tr>
+                    <tr>
+                        <td>Value</td><td id="str"></td><td id="agi"></td><td id="con"></td><td id="int"></td><td id="wis"></td><td id="chr"></td>
+                    </tr>
+                    <tr>
+                        <td>Modificator</td><td id="strMod">0</td><td id="agiMod">0</td><td id="conMod">0</td><td id="intMod">0</td><td id="wisMod">0</td><td id="chrMod">0</td>
+                    </tr>
+                
+                </table>
+                <script src="charStats.js"></script>
+            </p>
+            <p>
+            <select id="classSelector">
+                <option>--Choose class--</option>
+            </select>
+            </p>
+            <p><label>Level</label> <input type="number" max="20" min="1" value="1" id="level"></p>
+            <div id="hpWrapper">
+                HP: <span id="currentHp"></span>
+            </div>
+            <div id="skillWrapper">
+                
+            </div>
+            <button>placeholder</button>
+            <div id="levelAbilities"></div>
+            <script src="lvlAttr.js"></script>
+            <p><button id="download" onclick="readAndDisplay()">Download character</button></p>
+            <script src="download.js"></script>
+            <input type="file" id="charFile" accept=".json">
+            <script src="load.js"></script>
+            <div id="result"></div>
+        </div>
+    </body>
+</html>
