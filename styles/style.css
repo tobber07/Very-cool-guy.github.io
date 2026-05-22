@@ -24,6 +24,14 @@ body {
     animation: prideWave 12s ease-in-out infinite;
 }
 
+.dropdowner {
+    padding: 2px;
+    width: 50%;
+    border: 4px solid #A30262;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-indent: 20px;
+}
+
 @keyframes prideWave {
     0% {
         background-position: 0% 50%;
